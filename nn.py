@@ -2,6 +2,7 @@ import tensorflow as tf
 from keras.layers import Input, Conv2D, Dense, MaxPooling2D, Flatten, Reshape
 import numpy as np
 
+print('different')
 
 tds = np.load('ds.npy')
 train_x = np.array([item[0] for item in tds]).astype(np.float32).reshape(-1, 50, 50, 1)
